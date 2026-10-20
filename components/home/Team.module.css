@@ -1,0 +1,174 @@
+.team {
+  padding-block: var(--section);
+  background: var(--white);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(40px, 7vw, 120px);
+  align-items: center;
+}
+
+.media {
+  position: relative;
+}
+
+.photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 28px;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.badge {
+  position: absolute;
+  left: clamp(-24px, -2vw, -12px);
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 300px;
+  padding: 18px 22px;
+  border-radius: 16px;
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 30px 60px -30px rgba(12, 20, 30, 0.6);
+}
+
+.badge::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 22px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.badgeName {
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.badgeRole {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.title {
+  margin-top: 22px;
+  font-size: var(--fs-h2);
+  color: var(--navy);
+}
+
+.title em {
+  color: var(--green-700);
+}
+
+.designations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 30px 0 26px;
+}
+
+.designations li {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.designations li:hover {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.bio {
+  color: var(--ink-soft);
+  max-width: 620px;
+}
+
+.bio + .bio {
+  margin-top: 16px;
+}
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 34px 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.members li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.members li > span:last-child {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.35;
+}
+
+.members strong {
+  color: var(--navy);
+  font-size: 0.98rem;
+}
+
+.avatar {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .media {
+    max-width: 520px;
+  }
+
+  .badge {
+    left: 16px;
+    right: 16px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .members {
+    grid-template-columns: 1fr;
+  }
+}

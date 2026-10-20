@@ -1,0 +1,130 @@
+.footer {
+  background: var(--navy-950);
+  color: rgba(255, 255, 255, 0.72);
+  padding-top: clamp(56px, 7vw, 96px);
+  font-size: 0.95rem;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  padding-top: clamp(48px, 6vw, 72px);
+  border-top: 1px solid var(--line-light);
+}
+
+.brand p {
+  margin-top: 22px;
+  max-width: 360px;
+}
+
+.logo {
+  width: 170px;
+  height: auto;
+}
+
+.col h2 {
+  font-family: var(--f-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 18px;
+}
+
+.col ul {
+  display: grid;
+  gap: 10px;
+}
+
+.col a {
+  color: rgba(255, 255, 255, 0.85);
+  overflow-wrap: anywhere;
+  transition: color 0.3s;
+}
+
+.col a:hover {
+  color: var(--green);
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.social svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.4s var(--ease);
+}
+
+.social:hover svg {
+  transform: translate(2px, -2px);
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px 32px;
+  margin-top: clamp(48px, 6vw, 80px);
+  padding: 26px 0 32px;
+  border-top: 1px solid var(--line-light);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.legal {
+  display: flex;
+  gap: 24px;
+}
+
+.legal a:hover,
+.credit a:hover {
+  color: var(--green);
+}
+
+.credit a {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(224, 165, 38, 0.6);
+  text-underline-offset: 3px;
+  transition: color 0.3s;
+}
+
+@media (max-width: 960px) {
+  .top {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contactCol {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: var(--white);
+}

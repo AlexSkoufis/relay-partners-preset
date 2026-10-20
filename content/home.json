@@ -1,0 +1,368 @@
+{
+  "hero": {
+    "eyebrow": "Exit planning and value acceleration for business owners",
+    "titleLines": [
+      "Build value.",
+      "Exit on *your terms.*"
+    ],
+    "lead": "We help owners of small and mid-sized businesses know what their company is worth, grow that value, and plan the exit years ahead.",
+    "primaryCta": {
+      "label": "Book a confidential consultation",
+      "href": "#contact"
+    },
+    "secondaryCta": {
+      "label": "See how it works",
+      "href": "#process"
+    },
+    "trust": [
+      "Certified Exit Planning Advisor (CEPA®)",
+      "Founding board member, local exit planning chapter",
+      "Advising business owners since 1994"
+    ],
+    "visual": {
+      "title": "Your value roadmap",
+      "tag": "Illustration",
+      "start": "Today",
+      "end": "Transition ready",
+      "milestones": [
+        "Valuation baseline",
+        "Value gaps closed",
+        "Successor chosen",
+        "Exit on your timeline"
+      ],
+      "withPlan": "With a roadmap",
+      "withoutPlan": "Without a plan",
+      "axisY": "Business value",
+      "axisX": "Years before the exit"
+    }
+  },
+  "marquee": [
+    "Exit planning",
+    "Business valuation",
+    "Value creation",
+    "Family business succession",
+    "Insider transfers",
+    "Buy-sell agreements",
+    "Transition readiness"
+  ],
+  "why": {
+    "label": "Why start now",
+    "statement": "Businesses that are transition ready sell more quickly and receive better offers. Owners who are unprepared, or who wait until the timeline is short, usually leave value on the table.",
+    "signalsTitle": "Sound familiar?",
+    "signals": [
+      {
+        "title": "You don't have a clear number",
+        "text": "You know roughly what the business earns, but not what a buyer would actually pay for it, or why."
+      },
+      {
+        "title": "Too much still runs through you",
+        "text": "Customers, decisions and know-how depend on you. That makes the business harder to sell and harder to step away from."
+      },
+      {
+        "title": "Nobody has been chosen to take over",
+        "text": "Family, management, a partner or an outside buyer? Without a decision, there is no plan to work towards."
+      }
+    ],
+    "cta": {
+      "label": "Find out where you stand",
+      "href": "#contact"
+    }
+  },
+  "services": {
+    "label": "What we do",
+    "title": "Three services. *One roadmap.*",
+    "intro": "Know what the business is worth, grow that value, then plan the exit. We coordinate every step, together with your attorney and CPA.",
+    "items": [
+      {
+        "number": "01",
+        "name": "Exit Planning",
+        "summary": "Decide how, when and to whom you leave.",
+        "points": [
+          "Written exit goals and timeline",
+          "Successor options compared side by side",
+          "Coordination with your attorney and CPA"
+        ]
+      },
+      {
+        "number": "02",
+        "name": "Business Valuation",
+        "summary": "Know what your company is worth today.",
+        "points": [
+          "Current valuation baseline",
+          "Intangible assets assessed",
+          "The gap between today's value and your goal"
+        ]
+      },
+      {
+        "number": "03",
+        "name": "Value Creation",
+        "summary": "Grow the value before you sell.",
+        "points": [
+          "Prioritized plan to close value gaps",
+          "Ongoing coaching and accountability",
+          "Progress tracked against your goals"
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Discuss your situation",
+      "href": "#contact"
+    }
+  },
+  "paths": {
+    "label": "Who takes over?",
+    "title": "Every exit is different. *Start with yours.*",
+    "intro": "Choose the path that sounds closest to your situation and see where we come in.",
+    "items": [
+      {
+        "key": "family",
+        "tab": "The next generation",
+        "title": "Passing the business to your family",
+        "text": "We help prepare your children to lead, protect your retirement through the handover, and keep family relationships strong while ownership and control change hands.",
+        "points": [
+          "Next-generation training and preparation",
+          "Ownership and control transfer plan",
+          "Retirement protected through the transition"
+        ]
+      },
+      {
+        "key": "insiders",
+        "tab": "Management or employees",
+        "title": "Transferring to people inside the company",
+        "text": "Your managers and key employees already know the business. We help structure a transfer that works for them and for you, on a timeline that makes sense.",
+        "points": [
+          "Readiness of the internal team assessed",
+          "Transfer structured with your advisors",
+          "Leadership continuity planned"
+        ]
+      },
+      {
+        "key": "buyer",
+        "tab": "An outside buyer",
+        "title": "Selling to a third party",
+        "text": "Buyers pay for businesses that are predictable and ready. We help you get there before you go to market, so you negotiate from a stronger position.",
+        "points": [
+          "Value gaps closed before the sale",
+          "Business prepared for due diligence",
+          "Legal and tax experts involved early"
+        ]
+      },
+      {
+        "key": "partners",
+        "tab": "Partners or co-owners",
+        "title": "Planning between shareholders",
+        "text": "When there is more than one owner, everyone needs to know what happens next. We help shareholders align and put buy-sell agreements in place.",
+        "points": [
+          "Goals aligned between shareholders",
+          "Buy-sell agreements supported",
+          "Clear plan for each owner's exit"
+        ]
+      },
+      {
+        "key": "unsure",
+        "tab": "I'm not sure yet",
+        "title": "Still weighing your options",
+        "text": "That is a very common place to start. We help you define what you want personally and financially, then compare each path against those goals.",
+        "points": [
+          "Personal, business and financial goals defined",
+          "Options compared honestly",
+          "A first roadmap, whatever you decide"
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Talk through your path",
+      "href": "#contact"
+    }
+  },
+  "process": {
+    "label": "How it works",
+    "title": "From first conversation to a *finished transition.*",
+    "hint": "Scroll",
+    "steps": [
+      {
+        "number": "01",
+        "title": "A confidential conversation",
+        "text": "Call or email to set up a first meeting, wherever feels most comfortable and confidential for you. We explain our methodology and get a first read on how ready you and your company are."
+      },
+      {
+        "number": "02",
+        "title": "Assess value and readiness",
+        "text": "We look at where the business stands financially and structurally, what it is worth today, and what stands between you and the outcome you want."
+      },
+      {
+        "number": "03",
+        "title": "Build your roadmap",
+        "text": "Together we write a plan that takes you from where you are now to a transition that is legally, financially and personally straightforward."
+      },
+      {
+        "number": "04",
+        "title": "Execute, one goal at a time",
+        "text": "We stay with you as advisor, coach and manager, working with your legal and tax experts. Many clients partner with us for years, completing one goal and moving to the next."
+      }
+    ]
+  },
+  "journey": {
+    "image": {
+      "src": "/images/path.webp",
+      "alt": "A wooden boardwalk leading through a forest",
+      "width": 2000,
+      "height": 1333
+    },
+    "quote": "The sooner you begin the transition process, the better your overall outcome will be.",
+    "cite": "Relay Partners"
+  },
+  "stats": {
+    "items": [
+      {
+        "value": 1994,
+        "suffix": "",
+        "label": "The year Graham began advising businesses and their owners"
+      },
+      {
+        "value": 2011,
+        "suffix": "",
+        "label": "The year one of the clients quoted below began working with Graham"
+      },
+      {
+        "value": 5,
+        "suffix": "",
+        "label": "Professional designations, including CEPA®, CBEC® and CVB™"
+      }
+    ]
+  },
+  "team": {
+    "label": "Who you'll work with",
+    "title": "Experienced, certified and *on your side.*",
+    "lead": {
+      "name": "Graham Whitlock",
+      "role": "Founder, President and Certified Exit Planning Advisor",
+      "image": {
+        "src": "/images/lead.webp",
+        "alt": "Portrait of Graham Whitlock",
+        "width": 900,
+        "height": 1350
+      },
+      "designations": [
+        "CEPA®",
+        "CBEC®",
+        "CVB™",
+        "CVGA®",
+        "CDVC®"
+      ],
+      "bio": [
+        "Graham started his career in 1994 advising business owners on wealth and succession. After eighteen years at a national financial firm, he founded Relay Partners to focus on what he cares about most: helping owners hand over what they built, on their terms.",
+        "He is a member of a national exit planning association, a founding board member of its local chapter, and a regular speaker on succession. He also runs peer groups where owners work through the questions of selling or transferring their companies."
+      ]
+    },
+    "members": [
+      {
+        "name": "Elena Ruiz",
+        "role": "Client Engagement Coordinator",
+        "image": {
+          "src": "/images/member-1.webp",
+          "alt": "Portrait of Elena Ruiz",
+          "width": 320,
+          "height": 480
+        }
+      },
+      {
+        "name": "Marcus Tan",
+        "role": "Financial Analyst",
+        "image": {
+          "src": "/images/member-2.webp",
+          "alt": "Portrait of Marcus Tan",
+          "width": 320,
+          "height": 480
+        }
+      }
+    ],
+    "cta": {
+      "label": "Book time with Graham",
+      "href": "#contact"
+    }
+  },
+  "testimonials": {
+    "label": "Client stories",
+    "title": "What owners say after *working with us.*",
+    "prev": "Previous testimonial",
+    "next": "Next testimonial",
+    "items": [
+      {
+        "quote": "We started working with Graham and his team years before we planned to step back. Because of that head start, the business is worth more, it runs without us in every meeting, and handing it to our kids feels like a plan instead of a gamble.",
+        "name": "Daniel Okoro",
+        "role": "Business Owner"
+      },
+      {
+        "quote": "Graham looked hard at our numbers and our structure, then laid out a transition we could carry out over three years. Honest, practical and never in a hurry. I recommend him to every owner who asks.",
+        "name": "Patricia Lowell",
+        "role": "Business Owner"
+      },
+      {
+        "quote": "He guided us through the departure of a long-serving president in a family business and is now helping us plan the next chapter. We came out with a stronger leadership team than we started with.",
+        "name": "Helen Strand",
+        "role": "President"
+      },
+      {
+        "quote": "Relay is helping us prepare the next generation to run the company, including working directly with our children on the skills they will need. That protects our retirement as much as their future.",
+        "name": "Victor Amari",
+        "role": "Business Owner"
+      },
+      {
+        "quote": "I refer clients to Relay because of the process and the communication. Graham listens, pays attention to detail and finds options other advisors miss.",
+        "name": "Sam Whitford",
+        "role": "Business Broker"
+      }
+    ]
+  },
+  "ebook": {
+    "label": "Ebook",
+    "title": "What Your Intangible Assets Are Really Worth",
+    "text": "Your people, processes, brand and customer relationships often carry more value than the equipment. Learn how buyers price them, and how to grow them before you sell.",
+    "author": "By Graham Whitlock, CEPA",
+    "cta": {
+      "label": "Download the ebook",
+      "href": "#"
+    },
+    "cover": {
+      "tag": "Owner guide",
+      "alt": "Cover of the guide What Your Intangible Assets Are Really Worth"
+    }
+  },
+  "faq": {
+    "label": "Questions",
+    "title": "Before you *reach out.*",
+    "items": [
+      {
+        "q": "When should I start planning my exit?",
+        "a": "Earlier than most owners expect. For many, the process begins years before they want or need to sell, because that is how long it takes to make the changes that improve cash flow and value. The sooner you start, the more options you keep."
+      },
+      {
+        "q": "Do you replace my attorney or CPA?",
+        "a": "No. We are fee-based business advisors. We frequently involve legal and tax experts to improve valuation and protect your proceeds at the sale, while our role in the process is advisor, coach and manager."
+      },
+      {
+        "q": "What happens in the first meeting?",
+        "a": "We explain our methodology and assess how ready you and your company are for a transition. We are happy to meet wherever is most comfortable and confidential for you."
+      },
+      {
+        "q": "Can you help if I want to pass the business to my family?",
+        "a": "Yes. Family business succession is at the core of what we do, from preparing the next generation to lead, to protecting your retirement through the handover."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "It depends on where you are today and what you want. Many clients work with us for several years, completing one goal and then moving on to the next."
+      }
+    ]
+  },
+  "contactCta": {
+    "label": "Next step",
+    "title": "How ready is your business for a *transition?*",
+    "text": "Book a confidential conversation with Graham. Come away with a clearer view of where you stand today and what to do next.",
+    "primaryCta": {
+      "label": "Book an appointment"
+    },
+    "phoneLabel": "Prefer to call?",
+    "emailLabel": "Or email"
+  }
+}

@@ -1,0 +1,250 @@
+.services {
+  padding-block: var(--section);
+  background: var(--white);
+  border-radius: clamp(28px, 4vw, 56px) clamp(28px, 4vw, 56px) 0 0;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+  gap: 32px clamp(40px, 6vw, 100px);
+  align-items: end;
+}
+
+.title {
+  margin-top: 22px;
+  font-size: var(--fs-h2);
+  color: var(--navy);
+}
+
+.title em {
+  color: var(--green-700);
+}
+
+.headSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.intro {
+  max-width: 460px;
+  font-size: var(--fs-lead);
+  color: var(--ink-soft);
+}
+
+/* Expanding panels */
+.panels {
+  display: flex;
+  gap: 14px;
+  margin-top: clamp(48px, 6vw, 80px);
+  height: clamp(420px, 34vw, 500px);
+}
+
+.panel {
+  --fg: var(--navy);
+  --muted: var(--ink-soft);
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(24px, 2.4vw, 36px);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--fg);
+  overflow: hidden;
+  cursor: default;
+  outline: none;
+  transition: flex-grow 0.8s var(--ease), background-color 0.6s var(--ease), color 0.6s var(--ease);
+}
+
+.panel::after {
+  content: "";
+  position: absolute;
+  right: -90px;
+  bottom: -90px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(224, 165, 38, 0.35), transparent 65%);
+  opacity: 0;
+  transition: opacity 0.8s var(--ease);
+  pointer-events: none;
+}
+
+.panel:focus-visible {
+  box-shadow: 0 0 0 3px var(--green);
+}
+
+/* Active state: hovered, focused, or the first panel when nothing is hovered */
+.panels:not(:hover):not(:focus-within) .panel:first-child,
+.panel:hover,
+.panel:focus-within {
+  --fg: var(--white);
+  --muted: rgba(255, 255, 255, 0.72);
+  flex-grow: 2.3;
+  background: var(--navy);
+}
+
+.panels:not(:hover):not(:focus-within) .panel:first-child::after,
+.panel:hover::after,
+.panel:focus-within::after {
+  opacity: 1;
+}
+
+.panelTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.num {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(2.6rem, 2rem + 2vw, 4rem);
+  line-height: 1;
+  color: var(--green-700);
+  transition: color 0.5s;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  transform: rotate(-45deg);
+  transition: transform 0.7s var(--ease), background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+.icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.panelBody {
+  position: relative;
+  z-index: 1;
+}
+
+.name {
+  font-size: clamp(1.6rem, 1.1rem + 1.6vw, 2.6rem);
+  line-height: 1.02;
+  color: var(--fg);
+  transition: color 0.5s;
+}
+
+.summary {
+  margin-top: 10px;
+  color: var(--muted);
+  font-weight: 500;
+  transition: color 0.5s;
+}
+
+.points {
+  display: grid;
+  gap: 10px;
+  max-height: 0;
+  margin-top: 0;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: max-height 0.7s var(--ease), margin-top 0.7s var(--ease), opacity 0.4s, transform 0.6s var(--ease);
+}
+
+.points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.points svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  padding: 3px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: var(--green);
+  color: var(--navy-950);
+}
+
+.panels:not(:hover):not(:focus-within) .panel:first-child .num,
+.panel:hover .num,
+.panel:focus-within .num {
+  color: var(--green);
+}
+
+.panels:not(:hover):not(:focus-within) .panel:first-child .icon,
+.panel:hover .icon,
+.panel:focus-within .icon {
+  transform: rotate(0deg);
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--navy-950);
+}
+
+.panels:not(:hover):not(:focus-within) .panel:first-child .points,
+.panel:hover .points,
+.panel:focus-within .points {
+  max-height: 200px;
+  margin-top: 26px;
+  opacity: 1;
+  transform: none;
+  transition-delay: 0s, 0s, 0.25s, 0.2s;
+}
+
+@media (max-width: 1040px) {
+  .head {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Touch and narrow screens: stacked cards, everything visible */
+@media (max-width: 900px), (hover: none) {
+  .panels {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .panel,
+  .panel:hover,
+  .panel:focus-within,
+  .panels:not(:hover):not(:focus-within) .panel:first-child {
+    --fg: var(--white);
+    --muted: rgba(255, 255, 255, 0.72);
+    background: var(--navy);
+    flex: none;
+    min-height: 0;
+    gap: 40px;
+  }
+
+  .panel::after {
+    opacity: 1;
+  }
+
+  .num {
+    color: var(--green);
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .points,
+  .panel .points {
+    max-height: none;
+    margin-top: 22px;
+    opacity: 1;
+    transform: none;
+  }
+
+  .points li {
+    white-space: normal;
+  }
+}

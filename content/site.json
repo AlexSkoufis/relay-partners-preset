@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "siteName": "Relay Partners",
+    "title": "Relay Partners | Exit Planning and Business Succession Advisors",
+    "description": "Relay Partners helps owners of small and mid-sized businesses know what their company is worth, grow that value, and plan an exit to a buyer, a partner or the next generation.",
+    "locale": "en_US"
+  },
+  "logo": {
+    "alt": "Relay Partners"
+  },
+  "header": {
+    "skipLink": "Skip to content",
+    "nav": [
+      {
+        "label": "About",
+        "href": "#",
+        "children": [
+          {
+            "label": "Company Overview",
+            "href": "#"
+          },
+          {
+            "label": "Team",
+            "href": "#"
+          },
+          {
+            "label": "Testimonials",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "label": "Services",
+        "href": "#"
+      },
+      {
+        "label": "Resources",
+        "href": "#",
+        "children": [
+          {
+            "label": "E-Books",
+            "href": "#"
+          },
+          {
+            "label": "Scorecards",
+            "href": "#"
+          },
+          {
+            "label": "Educational Videos",
+            "href": "#"
+          },
+          {
+            "label": "Newsletters",
+            "href": "#"
+          },
+          {
+            "label": "Documents",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "label": "Podcast",
+        "href": "#"
+      },
+      {
+        "label": "Blog",
+        "href": "#",
+        "children": [
+          {
+            "label": "All Posts",
+            "href": "#"
+          },
+          {
+            "label": "Text Blogs",
+            "href": "#"
+          },
+          {
+            "label": "Video Blogs",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "label": "Events",
+        "href": "#",
+        "children": [
+          {
+            "label": "Upcoming Events",
+            "href": "#"
+          },
+          {
+            "label": "Owner Masterclass",
+            "href": "#"
+          },
+          {
+            "label": "Recordings",
+            "href": "#"
+          }
+        ]
+      }
+    ],
+    "phone": {
+      "label": "000.000.0000",
+      "href": "tel:+10000000000"
+    },
+    "cta": {
+      "label": "Book a consultation",
+      "href": "#contact"
+    },
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "contact": {
+    "phone": {
+      "label": "000.000.0000",
+      "href": "tel:+10000000000"
+    },
+    "email": {
+      "label": "graham@relay.example",
+      "href": "mailto:graham@relay.example"
+    },
+    "location": "Nashville, Tennessee",
+    "booking": {
+      "label": "Book an appointment",
+      "href": "#contact"
+    }
+  },
+  "footer": {
+    "description": "Relay Partners is an independent firm that helps business owners build value in their company and prepare a clear exit plan.",
+    "columns": [
+      {
+        "title": "Explore",
+        "links": [
+          {
+            "label": "About",
+            "href": "#"
+          },
+          {
+            "label": "Services",
+            "href": "#"
+          },
+          {
+            "label": "Resources",
+            "href": "#"
+          },
+          {
+            "label": "Podcast",
+            "href": "#"
+          },
+          {
+            "label": "Blog",
+            "href": "#"
+          },
+          {
+            "label": "Events",
+            "href": "#"
+          }
+        ]
+      }
+    ],
+    "contactTitle": "Get in touch",
+    "socialTitle": "Follow",
+    "social": [
+      {
+        "label": "LinkedIn",
+        "href": "#"
+      },
+      {
+        "label": "YouTube",
+        "href": "#"
+      }
+    ],
+    "legal": [
+      {
+        "label": "Privacy Policy",
+        "href": "#"
+      }
+    ],
+    "copyright": "© 2026 Relay Partners. All rights reserved.",
+    "backToTop": "Back to top",
+    "credit": {
+      "prefix": "Designed by",
+      "label": "CoreConcepts Design",
+      "href": "https://coreconcepts.design/"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.contact {
+  position: relative;
+  padding-block: var(--section);
+  background: var(--navy-950);
+  color: var(--white);
+  overflow: hidden;
+  border-radius: clamp(28px, 4vw, 56px) clamp(28px, 4vw, 56px) 0 0;
+  margin-top: calc(-1 * clamp(28px, 4vw, 56px));
+}
+
+.motif {
+  position: absolute;
+  right: -6vw;
+  bottom: -8vw;
+  width: min(60vw, 760px);
+  height: auto;
+  fill: none;
+  stroke: rgba(224, 165, 38, 0.22);
+  stroke-width: 0.15;
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  margin-top: 26px;
+  max-width: 1100px;
+  font-size: clamp(2.6rem, 1.4rem + 5vw, 6.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.title em {
+  color: var(--green);
+}
+
+.text {
+  margin-top: 28px;
+  max-width: 600px;
+  font-size: var(--fs-lead);
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.actions {
+  margin-top: 44px;
+}
+
+.book {
+  min-height: 64px;
+  padding: 1em 1.9em;
+  font-size: 1.1rem;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, auto));
+  gap: 14px;
+  margin-top: 64px;
+}
+
+.channel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 26px 18px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line-light);
+  transition: background-color 0.4s, border-color 0.4s;
+}
+
+.channel:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(224, 165, 38, 0.6);
+}
+
+.channel > span:last-child {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.channelIcon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(224, 165, 38, 0.15);
+  color: var(--green);
+}
+
+.channelIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.channelLabel {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.channelValue {
+  font-weight: 700;
+  font-size: clamp(0.88rem, 0.6rem + 1.4vw, 1.05rem);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 720px) {
+  .channels {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .actions,
+  .actions > span,
+  .book {
+    width: 100%;
+    justify-content: center;
+  }
+}

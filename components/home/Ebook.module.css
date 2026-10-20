@@ -1,0 +1,122 @@
+.ebook {
+  background: var(--paper);
+  padding-bottom: var(--section);
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  padding: clamp(32px, 5vw, 80px);
+  border-radius: clamp(24px, 3vw, 40px);
+  background: var(--navy);
+  color: var(--white);
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  right: -10%;
+  top: -40%;
+  width: 70%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(224, 165, 38, 0.32), transparent 65%);
+}
+
+.copy {
+  position: relative;
+}
+
+.title {
+  margin-top: 22px;
+  font-size: clamp(1.9rem, 1.2rem + 2.4vw, 3.3rem);
+  line-height: 1.04;
+}
+
+.text {
+  margin-top: 20px;
+  max-width: 480px;
+  font-size: var(--fs-lead);
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.author {
+  margin: 14px 0 32px;
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--green);
+}
+
+.media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cover {
+  width: min(100%, 520px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 50px 90px -30px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  will-change: transform;
+}
+
+.book {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 4 / 3;
+  padding: clamp(24px, 4vw, 44px);
+  overflow: hidden;
+  color: var(--white);
+  background:
+    linear-gradient(115deg, transparent 58%, var(--green) 58% 66%, transparent 66%),
+    linear-gradient(115deg, transparent 70%, rgba(255, 255, 255, 0.08) 70% 78%, transparent 78%),
+    var(--navy);
+}
+
+.bookTag {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.bookTitle {
+  max-width: 13ch;
+  margin-top: 16px;
+  font-family: var(--f-serif);
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.08;
+}
+
+.bookAuthor {
+  margin-top: auto;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.bookBrand {
+  position: absolute;
+  right: clamp(24px, 4vw, 44px);
+  bottom: clamp(20px, 3.4vw, 38px);
+  width: 120px;
+}
+
+.bookBrand svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}

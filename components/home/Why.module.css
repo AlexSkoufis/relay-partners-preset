@@ -1,0 +1,104 @@
+.why {
+  padding-block: var(--section);
+  background: var(--paper);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(48px, 7vw, 120px);
+  align-items: start;
+}
+
+.side {
+  position: sticky;
+  top: 120px;
+}
+
+.statement {
+  margin-top: 24px;
+  font-size: clamp(1.8rem, 1.1rem + 2vw, 2.8rem);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+}
+
+.cta {
+  margin-top: 34px;
+  color: var(--green-700);
+  font-size: 1.05rem;
+}
+
+.listTitle {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--fs-h3);
+  letter-spacing: -0.01em;
+  color: var(--ink-soft);
+  padding-bottom: 18px;
+}
+
+.signals {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.signal {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+  transition: padding 0.5s var(--ease);
+}
+
+.signal:hover {
+  padding-left: 12px;
+}
+
+.num {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 0.9;
+  color: var(--grey);
+  transition: color 0.4s;
+}
+
+.signal:hover .num {
+  color: var(--green-700);
+}
+
+.signal h4 {
+  font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.55rem);
+  line-height: 1.15;
+  color: var(--navy);
+}
+
+.signal p {
+  margin-top: 10px;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .side {
+    position: static;
+  }
+
+  .signal {
+    grid-template-columns: 48px 1fr;
+    gap: 14px;
+  }
+
+  .num {
+    font-size: 2rem;
+  }
+}
